@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
+
+
+
   <body ng-controller="mainCtrl">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -16,13 +20,19 @@
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name" >
-              <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
+              <button class="btn btn-primary" ng-click="getSongData(artist)"> Submit </button>
             </div>
           </form>
         </div>
       </div>
     </div>
     <div class="panel panel-default">
+
+
+
+
+        <!-- data here -->
+
       <div class="panel-heading"> Your Search Results:</div>
      <div class="gridStyle" ng-grid="gridOptions" swap-image="defaultInfo.search"></div>
     </div>
